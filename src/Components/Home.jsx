@@ -34,6 +34,18 @@ const Home = () => {
                 <MdOutlineKeyboardArrowRight size={25} />
               </span>
             </Link>
+            <a
+              href="/resume(4).pdf"
+              download={true}
+              target="_blank"
+              rel="noreferrer"
+              className="text-white w-fit px-3 py-2 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 group cursor-pointer "
+            >
+              Resume
+              <span className="group-hover:rotate-90 duration-300">
+                <MdOutlineKeyboardArrowRight size={25} />
+              </span>
+            </a>
           </div>
         </div>
         <div>

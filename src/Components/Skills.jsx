@@ -4,12 +4,12 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
+import pythonglogo from "../assets/pythonglogo.png";
 import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 
-const Experience = () => {
+const Skills = () => {
   const techs = [
     {
       id: 1,
@@ -43,8 +43,8 @@ const Experience = () => {
     },
     // {
     //   id: 6,
-    //   src: nextjs,
-    //   title: "Next JS",
+    //   src: pythonglogo,
+    //   title: "djangologo",
     //   style: "shadow-white",
     // },
     // {
@@ -54,7 +54,7 @@ const Experience = () => {
     //   style: "shadow-pink-400",
     // },
     {
-      id: 6,
+      id: 7,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
@@ -92,4 +92,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Skills;

@@ -76,38 +76,46 @@
 // export default Portfolio;
 
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
+// import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
 import installNode from "../assets/portfolio/installNode.jpg";
 import navbar from "../assets/portfolio/navbar.jpg";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import eatryapp from "../assets/eatryapp.jpg";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: eatryapp,
+      liv: `https://eatryapp.netlify.app`,
+      git: `https://github.com/dhananjay-3011/eatry-app`,
     },
     {
       id: 2,
       src: reactParallax,
+      liv: `https://eatryapp.netlify.app`,
     },
     {
       id: 3,
       src: navbar,
+      liv: `https://eatryapp.netlify.app`,
     },
     {
       id: 4,
       src: reactSmooth,
+      liv: `https://eatryapp.netlify.app`,
     },
     {
       id: 5,
       src: installNode,
+      liv: `https://eatryapp.netlify.app`,
     },
     {
       id: 6,
       src: reactWeather,
+      liv: `https://eatryapp.netlify.app`,
     },
   ];
 
@@ -125,7 +133,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, liv, git }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -133,12 +141,16 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </button>
+                <a href={liv}>
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    Live
+                  </button>
+                </a>
+                <a href={git}>
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    Code
+                  </button>
+                </a>
               </div>
             </div>
           ))}
