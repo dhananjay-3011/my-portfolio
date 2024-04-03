@@ -78,9 +78,9 @@
 import React from "react";
 // import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
 import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+import fetchdata from "../assets/portfolio/fetchdata.jpg";
+import todoap from "../assets/portfolio/todoap.jpg";
+import restromenu from "../assets/portfolio/restromenu.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import eatryapp from "../assets/eatryapp.jpg";
 
@@ -94,18 +94,21 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: reactParallax,
-      liv: `https://eatryapp.netlify.app`,
+      src: todoap,
+      liv: `https://toodosite.netlify.app/`,
+      git: `https://github.com/dhananjay-3011/todolist`,
     },
     {
       id: 3,
-      src: navbar,
-      liv: `https://eatryapp.netlify.app`,
+      src: fetchdata,
+      liv: `https://fetchgiitdata.netlify.app/`,
+      git: `https://github.com/dhananjay-3011/Fetching-Github-Data`,
     },
     {
       id: 4,
-      src: reactSmooth,
-      liv: `https://eatryapp.netlify.app`,
+      src: restromenu,
+      liv: `https://restroomenu.netlify.app/`,
+      git: `https://github.com/dhananjay-3011/RestroMenu`,
     },
     {
       id: 5,
@@ -138,7 +141,7 @@ const Portfolio = () => {
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 h-200"
               />
               <div className="flex items-center justify-center">
                 <a href={liv}>
